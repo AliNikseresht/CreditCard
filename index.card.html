@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/index.card.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Abril+Fatface&family=Aldrich&family=Alumni+Sans+Inline+One&family=Black+Ops+One&family=Changa+One&family=Jost&family=Keania+One&family=Lexend:wght@500&family=Maiden+Orange&family=Montserrat&family=Odibee+Sans&family=Rammetto+One&family=Reenie+Beanie&family=Sansita&family=Secular+One&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Abril+Fatface&family=Aldrich&family=Alumni+Sans+Inline+One&family=Black+Ops+One&family=Changa+One&family=Jost&family=Keania+One&family=Lexend:wght@500&family=Maiden+Orange&family=Montserrat&family=Rammetto+One&family=Reenie+Beanie&family=Sansita&family=Secular+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main class="container">
+        <div class="row">
+            <section>
+                <div></div>
+            </section>
+            <section class="cvc">
+                <img src="assets/img/14.png" alt="">
+                <div id="show" class="col-12 fs-3 p-3 mb-1"></div>
+                <div id="see" class="col-4">CardHolder
+                    <span></span>
+                </div>
+                <div class="col-4">Expires
+                    <span class="eslsh">
+                        <span class="_year"></span>
+                        <span>/</span>
+                        <span class="_month"></span>
+                    </span>
+                </div>
+                <div id="cv" class="col-4">CVC
+                    <span></span>
+                </div>
+            </section>
+            <div class="FoRm">
+                <h1>Payment Information</h1>
+                <label class="mt-4" for="">Card Number</label>
+                <input class="col-11 my-1 py-1 px-2" type="text" id="creditcard" placeholder="1234 5678 9123 4567">
+                <div class="errorReq">Required Field</div>
+                <label for="">Card Holder</label>
+                <input class="col-11 my-1 py-1 px-2" type="text" id="Holder" placeholder="Ali Nikseresht">
+                <div class="errorReq">Required Field</div>
+                <div class="d-flex col-11 mt-3">
+                    <div class="col-4 me-3">
+                        <label for="">Expiry Month</label>
+                        <select class="col-12 my-1 py-2 px-2 monnn" name="month" id="month">
+                            <option value=""></option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                    </div>
+                    <div class="col-4 me-3 ">
+                        <label for="">Expiry Year</label>
+                        <select class="col-12 my-1 py-2 px-2 yearss" name="years" id="years">
+                            <option value=""></option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                            <option value="2030">2030</option>
+                        </select>
+                    </div>
+                    <div class="col-3 ms-1">
+                        <label class="ms-1" for="">CVC</label>
+                        <input id="cvc" class="col-12 m-1 py-1 px-2" type="text">
+                        <div class="errorReq px-1">Required Field</div>
+
+                    </div>
+                </div>
+                <div class="col-11 d-flex flex-wrap">
+                    <h6 class="col-9 total me-1">Sub-Total:</h6>
+                    <span>$35.59 CAD</span>
+
+                    <h6 class="col-10 total me-2">5% GST:</h6>
+                    <span>$11.88 CAD</span>
+
+                    <h6 class="col-10">9.975% QST:</h6>
+                    <span>$3.55 CAD</span>
+                    
+                    <strong class="col-9 total">Total:</strong>
+                    <strong>$40.92 CAD</strong>
+                </div>
+                <div>
+                    <a href="https://github.com/AliNikseresht"><button
+                            class="col-11 rounded p-3 bg-white border border-danger text-danger mt-3">Pay
+                            Now</button></a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="assets/js/index.card.js"></script>
+
+</html>
